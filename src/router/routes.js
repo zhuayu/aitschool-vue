@@ -1,5 +1,6 @@
 const Home = resolve => require(['@/pages/Home/Home'], resolve)
 const Plan = resolve => require(['@/pages/Plan/Plan'], resolve)
+const Course = resolve => require(['@/pages/Course/Course'], resolve)
 const NotFound = resolve => require(['@/pages/Common/404'], resolve)
 
 export default [
@@ -9,9 +10,14 @@ export default [
     component: Home
   },
   {
-    path: '/plan',
+    path: '/plan/:id',
     name: 'Plan',
     component: Plan
+  },
+  {
+    path: '/course/:id',
+    name: 'Course',
+    component: Course
   },
   {
     path: '*',

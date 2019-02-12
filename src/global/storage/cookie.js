@@ -12,7 +12,7 @@ class MyCookie  {
       cookieValue = decodeURIComponent(document.cookie.substring(cookieStart + cookieName.length, cookieEnd));
     }
     return cookieValue;
-  },
+  }
 
   set (name, value, expires, path, domain, secure) {
     let cookieText = encodeURIComponent(name) + "=" + encodeURIComponent(value);
@@ -29,7 +29,7 @@ class MyCookie  {
       cookieText += "; secure";
     }
     document.cookie = cookieText;
-  },
+  }
 
   delete (name, path, domain, secure){
     this.set(name, "", new Date(0), path, domain, secure);

@@ -1,16 +1,17 @@
 const VERSION = 'V0.0.1';
 const MODE = 'production';
-const apiprefix  = '/';
-const apiHost    = 'https://api.test.com';
-const apiOrigin  = apiHost + apiprefix;
+const apiprefix  = '';
+const apiHost    = 'https://api.aitschool.com';
+const PREFIX  = apiHost + apiprefix;
 const githubClientId = '0afe04184c7f3628940d';
 const githubRedirctURI = 'https%3A%2F%2Fwww.aitschool.com';
 const githubLoginURL = 'https://github.com/login/oauth/authorize';
 
+
 const webConfig = {
   VERSION,
   MODE,
-  githubLoginURL: `${githubLoginURL}?client_id=${client_id}&redirect_uri=${redirect_uri}%2Flogin%2Foauth%2Fcallback%2Fgithub&scope=user%3Aemail%2Crepo%2Cuser%2Cgist&response_type=code`,
+  githubLoginURL: `${githubLoginURL}?client_id=${githubClientId}&redirect_uri=${githubRedirctURI}%2Flogin%2Foauth%2Fcallback%2Fgithub&scope=user%3Aemail%2Crepo%2Cuser%2Cgist&response_type=code`,
   githubCallbackURL: PREFIX + '/login/oauth/callback/github',
   urls: {
     common: {

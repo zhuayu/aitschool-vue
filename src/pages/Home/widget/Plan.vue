@@ -1,10 +1,10 @@
 <template>
   <div class="plan--section">
-    <div class="plan-item">
+    <router-link class="plan-item" :to="{ name:'Plan',params: { id: 1}}">
       <img class="plan-item-image" src="~@/assets/images/common/plan/web.png"  alt="Web前端工程师"/>
       <div class="plan-item-name">Web前端工程师课程</div>
       <span class="plan-item-tag active">立即学习</span>
-    </div>
+    </router-link>
     <div class="plan-item">
       <img class="plan-item-image" src="~@/assets/images/common/plan/php.png"  alt="PHP工程师"/>
       <div class="plan-item-name">PHP工程师课程</div>
@@ -15,11 +15,11 @@
       <div class="plan-item-name">Python工程师课程</div>
       <span class="plan-item-tag">敬请期待</span>
     </div>
-    <div class="plan-item">
+    <router-link class="plan-item" :to="{ name:'Plan',params: { id: 3}}">
       <img class="plan-item-image" src="~@/assets/images/common/plan/wechat.png"  alt="微信小程序工程师"/>
       <div class="plan-item-name">微信小程序工程师课程</div>
       <span class="plan-item-tag active">立即学习</span>
-    </div>
+    </router-link>
     <div class="plan-item">
       <img class="plan-item-image" src="~@/assets/images/common/plan/ios.png"  alt="iOS工程师"/>
       <div class="plan-item-name">iOS工程师课程</div>

@@ -5,7 +5,7 @@
         <Banner/>
         <Course/>
         <Plan/>
-        <Partner/>
+        <More/>
       </div>
       <Aside class="home--page__side"/>
     </div>
@@ -16,9 +16,9 @@
 import Banner from './widget/Banner.vue';
 import Plan from './widget/Plan.vue';
 import Course from './widget/Course.vue';
-import Partner from './widget/Partner.vue';
+import Aside from '@/components/Aside/Aside.vue';
+import More from '@/components/More/More.vue';
 
-import Aside from './widget/Aside.vue';
 
 export default {
   name: 'home',
@@ -26,7 +26,7 @@ export default {
     Banner,
     Plan,
     Course,
-    Partner,
+    More,
     Aside
   }
 }

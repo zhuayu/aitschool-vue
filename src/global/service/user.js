@@ -9,7 +9,7 @@ export default {
     if(token){
       return token
     }
-    token = DataStore.storage.get('ait_token');
+    token = DataStore.storage.get('token');
     if(token){
       DataStore.map.set('token',token);
       return token
@@ -40,7 +40,7 @@ export default {
     let name = 'github';
     return request.post(webConfig.urls.common.login,{ name, code }).then( token => {
       DataStore.map.set('token',token);
-      DataStore.storage.set('ait_token',token);
+      DataStore.storage.set('token',token);
       return token
     })
   }

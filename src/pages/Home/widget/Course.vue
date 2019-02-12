@@ -1,6 +1,6 @@
 <template>
   <div class="course--section">
-    <div class="course--item">
+    <router-link class="course--item" :to="{ name:'Course',params: { id: 2}}">
       <div class="course--item__top">
         <div class="course--item__title">HTML</div>
         <div class="course--item__subtitle">-- HTML基础</div>
@@ -13,8 +13,8 @@
         </div>
         <span class="course--item__btn">了解课程</span>
       </div>
-    </div>
-    <div class="course--item">
+    </router-link>
+    <router-link class="course--item" :to="{ name:'Course',params: { id: 3}}">
       <div class="course--item__top" style="background-color: rgba(169,81,237,.7)">
         <div class="course--item__title">CSS</div>
         <div class="course--item__subtitle">-- 层叠样式表</div>
@@ -27,7 +27,7 @@
         </div>
         <span class="course--item__btn" style="background-color: #a151ed">了解课程</span>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 
@@ -94,7 +94,7 @@ export default {
       }
       .course--item__bottom{
         padding: 20px;
-        background-color: #fff;
+        background-color: #fafbfc;
         display: flex;
         .course--item__content{
           flex: 1;

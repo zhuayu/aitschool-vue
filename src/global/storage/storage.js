@@ -1,15 +1,23 @@
 class MyStorage {
   constructor() {
+    this.prefix = 'ait_';
     this.storage = window.localStorage;
   }
 
-  set(key, value, exp = 60){ // exp/秒，默认 60 秒
+  set(key, value, exp = 60 * 60 ){ // exp/秒，默认 60 * 60 秒 , 1 小时
     let timestamp = Date.now();
-    this.storage.setItem(key, { value, exp, timestamp });
+    let data = JSON.stringify({ value, exp, timestamp });
+    key = this.prefix + key;
+    this.storage.setItem(key, data);
   }
 
   get(key) {
+    key = this.prefix + key;
     let data = this.storage.getItem(key);
+    if(!data){
+      return false
+    }
+    data = JSON.parse(data);
     let exp = data.exp * 1000;
     let timestamp = data.timestamp;
     let value = data.value;
@@ -23,7 +31,7 @@ class MyStorage {
   }
 
   delete(key) {
-    this.removeItem(key)
+    this.storage.removeItem(key)
   }
 }
 

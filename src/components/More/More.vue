@@ -20,7 +20,7 @@
         <img class="partner--item__image" src="~@/assets/images/partners/logo-gray-tencent.svg"/>
       </div>
     </div>
-    <p class="partner--description">学 Google、Facebook、Tencent 官方教程，掌握前沿技术</p>
+    <p class="partner--description">{{content}}</p>
   </div>
 </template>
 
@@ -28,15 +28,17 @@
 
 
 export default {
-  name: 'Partner',
   data() {
     return {
 
     }
   },
-  components: {
-
-  }
+  props: {
+    content: {
+      type: String,
+      default: '学 Google、Facebook、Tencent 官方教程，掌握前沿技术'
+    }
+  },
 }
 </script>
 

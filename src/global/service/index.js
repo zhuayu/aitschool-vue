@@ -1,9 +1,13 @@
 import userService from './user.js';
-import qiniuService from './qiniu.js';
+import planService from './plan.js';
+import courseService from './course.js';
+
+
 
 const Service = {
   user: userService,
-  qiniu: qiniuService,
+  plan: planService,
+  course: courseService
 }
 
 export default Service;
