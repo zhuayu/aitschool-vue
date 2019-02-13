@@ -26,13 +26,9 @@ const handleErrorRequest = (response) => {
 import DataStore from '@/global/storage/datastore.js';
 axios.interceptors.request.use(function (config) {
   let token = DataStore.map.get('token');
-  if(token){
-    return token
-  }
-  token = DataStore.storage.get('ait_token');
-  if(token){
+  if(!token){
+    token = DataStore.storage.get('token');
     DataStore.map.set('token',token);
-    return token
   }
   if(token){
     config['headers'] = {

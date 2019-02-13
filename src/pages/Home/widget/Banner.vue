@@ -4,7 +4,7 @@
       <div class="banner--content__tips">限时免费</div>
       <div class="banner--content__title">编程学习冷启动课程</div>
       <div class="banner--content__desc">软件安装、预备知识</div>
-      <router-link :to="{ name:'Course',params: { id: 3}}" class="banner--content__btn">马上试学</router-link>
+      <router-link :to="{ name:'Course',params: { id: 11}}" class="banner--content__btn">马上试学</router-link>
     </div>
   </div>
 </template>

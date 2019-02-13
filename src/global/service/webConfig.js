@@ -32,7 +32,7 @@ const webConfig = {
       info: (id) => PREFIX + '/course/courses/' + id,
       status: (id) => PREFIX + '/course/courses/' + id + '/buy-status',
     },
-    session: {
+    section: {
       list: PREFIX + '/course/sections',
       info: (id) => PREFIX + '/course/sections/' + id,
       times: (id) => PREFIX + '/course/sections/' + id + '/time',

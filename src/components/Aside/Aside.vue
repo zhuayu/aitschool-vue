@@ -34,6 +34,11 @@
         </div>
       </div>
     </div>
+    <div class="side--gg__container">
+      <a href="http://www.topproio.com/" target="_blank">
+        <img class="side--gg__img" src="~@/assets/images/common/toppro_gg.jpeg" />
+      </a>
+    </div>
     <div class="side--about__container">
       <span>关于我们 >></span>
     </div>
@@ -105,6 +110,17 @@ export default {
         color: #666;
         line-height: 17px;
       }
+    }
+
+    .side--gg__container{
+      margin-top: 10px;
+
+      .side--gg__img{
+        display: block;
+        max-width: 100%;
+        height: 110px;
+      }
+
     }
 
     .side--about__container{

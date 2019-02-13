@@ -13,6 +13,18 @@ export default {
       DataStore.storage.set('course_' + id,courseInfo);
       return courseInfo
     })
+  },
+
+  buyStatus (id) {
+    let datas = DataStore.storage.get('buy_status_course_' + id);
+    if(datas){
+      return Promise.resolve(datas);
+    }
+    return request.get(webConfig.urls.course.status(id)).then( buyStatus => {
+      DataStore.map.set('buy_status_course_' + id,buyStatus);
+      DataStore.storage.set('buy_status_course_' + id,buyStatus);
+      return buyStatus
+    })
   }
 }
 

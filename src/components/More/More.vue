@@ -36,7 +36,7 @@ export default {
   props: {
     content: {
       type: String,
-      default: '学 Google、Facebook、Tencent 官方教程，掌握前沿技术'
+      default: '掌握 Google、Facebook、Tencent ... 前沿技术'
     }
   },
 }

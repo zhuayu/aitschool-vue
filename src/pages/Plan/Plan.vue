@@ -1,8 +1,8 @@
 <template>
   <div class="plan--page">
     <div class="plan--page__container w1000">
-      <div class="plan--page__main" v-show="plan.id">
-        <div class="plan--info__container">
+      <div class="plan--page__main">
+        <div class="plan--info__container" v-show="plan.id">
           <div class="plan--info__left">
             <img class="plan--info__image" :src="plan.image_path" />
           </div>
@@ -11,7 +11,7 @@
             <div class="plan--info__desc">{{plan.description}}</div>
           </div>
         </div>
-        <div class="plan--course__container">
+        <div class="plan--course__container" v-show="plan.id">
           <router-link :to="{ name:'Course',params: { id: data.id}}" class="plan--course__item" v-for="(data,index) in plan.courses" :key="index">
             <Course :course="data"/>
           </router-link>

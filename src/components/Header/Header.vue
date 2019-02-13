@@ -8,7 +8,7 @@
       </div>
       <div class="page--header__bd"></div>
       <div class="page--header__ft">
-        <img class="page--header__avatar" :src="avatar" alt="avatar" />
+        <img class="page--header__avatar" :src="userInfo.github_avatar_url" alt="avatar" />
       </div>
     </div>
   </div>
@@ -16,12 +16,21 @@
 
 <script>
 import avatar from '@/assets/images/common/default_avatar.jpg';
+import Service from '@/global/service/index.js';
+
 export default {
   name: 'Header',
   data () {
     return {
-      avatar: avatar
+      userInfo: {
+        github_avatar_url: avatar
+      }
     }
+  },
+  created() {
+    Service.user.getUserInfo().then( userInfo => {
+      this.userInfo = userInfo
+    })
   },
   components: {
 
