@@ -43,7 +43,7 @@ const webConfig = {
       graduation: (id) => PREFIX + '/course/graduation_projects/' + id,
     },
     blog: {
-      list: PREFIX + '/blog',
+      info: (id)=> PREFIX + '/blog/' + id,
     }
   }
 }

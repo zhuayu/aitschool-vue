@@ -138,7 +138,6 @@ export default {
 .video-section{
   transition: all .2s ease;
   box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
-  // border-radius: 4px;
   overflow: hidden;
 
   .video-tips{

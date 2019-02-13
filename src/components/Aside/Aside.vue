@@ -40,7 +40,7 @@
       </a>
     </div>
     <div class="side--about__container">
-      <span>关于我们 >></span>
+      <router-link :to="{ name:'Blog',params: { id: 1}}">关于我们 >></router-link>
     </div>
   </div>
 </template>
