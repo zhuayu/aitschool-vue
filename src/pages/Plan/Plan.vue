@@ -2,20 +2,22 @@
   <div class="plan--page">
     <div class="plan--page__container w1000">
       <div class="plan--page__main">
-        <div class="plan--info__container" v-show="plan.id">
-          <div class="plan--info__left">
-            <img class="plan--info__image" :src="plan.image_path" />
+        <Loading class="plan--main__contaienr" :loading="loading">
+          <div class="plan--info__container" v-show="plan.id">
+            <div class="plan--info__left">
+              <img class="plan--info__image" :src="plan.image_path" />
+            </div>
+            <div class="plan--info__right">
+              <div class="plan--info__title">{{plan.name}}</div>
+              <div class="plan--info__desc">{{plan.description}}</div>
+            </div>
           </div>
-          <div class="plan--info__right">
-            <div class="plan--info__title">{{plan.name}}</div>
-            <div class="plan--info__desc">{{plan.description}}</div>
+          <div class="plan--course__container" v-show="plan.id">
+            <router-link :to="{ name:'Course',params: { id: data.id}}" class="plan--course__item" v-for="(data,index) in plan.courses" :key="index">
+              <Course :course="data"/>
+            </router-link>
           </div>
-        </div>
-        <div class="plan--course__container" v-show="plan.id">
-          <router-link :to="{ name:'Course',params: { id: data.id}}" class="plan--course__item" v-for="(data,index) in plan.courses" :key="index">
-            <Course :course="data"/>
-          </router-link>
-        </div>
+        </Loading>
         <More content="更多 Google、Facebook、Tencent 前沿课程，敬请期待 ～"/>
       </div>
       <Aside class="plan--page__side"/>
@@ -29,24 +31,28 @@ import Aside from '@/components/Aside/Aside.vue';
 import Service from '@/global/service/index.js';
 import Course from '@/components/CourseCard/CourseCard_1.vue';
 import More from '@/components/More/More.vue';
+import Loading from '@/components/Loading/Circle.vue';
 
 export default {
   name: 'Plan',
   data () {
     return {
-      plan: {}
+      plan: {},
+      loading: true,
     }
   },
   created() {
     let id = this.$route.params.id;
     Service.plan.info(id).then( res => {
       this.plan = res;
+      this.loading = false
     })
   },
   components: {
     Aside,
     Course,
-    More
+    More,
+    Loading
   }
 }
 </script>

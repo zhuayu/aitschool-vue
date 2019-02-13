@@ -2,16 +2,18 @@
   <div class="course--page">
     <div class="course--page__container w1000">
       <div class="course--page__main">
-        <div class="course--info__container">
-          <Course :course="course" btnText="" :shadow="false"/>
-        </div>
-        <div class="course--catalog__container">
-          <div class="course--catalog__content">
-            <p class="course--catalog__title">学前需知</p>
-            <p class="course--catalog__description">{{course.tips}}</p>
+        <Loading :loading="loading">
+          <div class="course--info__container">
+            <Course :course="course" btnText="" :shadow="false"/>
           </div>
-          <Catalog :course="course" :can-learn="canLearn"/>
-        </div>
+          <div class="course--catalog__container">
+            <div class="course--catalog__content">
+              <p class="course--catalog__title">学前需知</p>
+              <p class="course--catalog__description">{{course.tips}}</p>
+            </div>
+            <Catalog :course="course" :can-learn="canLearn"/>
+          </div>
+        </Loading>
         <More/>
       </div>
       <Aside class="course--page__side"/>
@@ -24,7 +26,7 @@
 import Aside from '@/components/Aside/Aside.vue';
 import Service from '@/global/service/index.js';
 import Course from '@/components/CourseCard/CourseCard_1.vue';
-// import Catalog from './widget/Catalog.vue';
+import Loading from '@/components/Loading/Circle.vue';
 import Catalog from '@/components/Catalog/Catalog.vue';
 
 import More from '@/components/More/More.vue';
@@ -35,22 +37,24 @@ export default {
     return {
       course: {},
       canLearn: false,
+      loading: true,
     }
   },
   created() {
     let id = this.$route.params.id;
-    Service.course.info(id).then( res => {
-      this.course = res;
-    })
-    Service.course.buyStatus(id).then( res => {
-      this.canLearn = res.can_learn
-    })
+    Promise.all([Service.course.info(id),Service.course.buyStatus(id)])
+      .then(res => {
+        this.course = res[0];
+        this.canLearn = res[1].can_learn;
+        this.loading = false
+      })
   },
   components: {
     Aside,
     Course,
     Catalog,
-    More
+    More,
+    Loading
   }
 }
 </script>
