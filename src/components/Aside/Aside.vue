@@ -8,7 +8,7 @@
     <div class="aside--recommend__container">
       <div class="aside--recommend__item flex-box">
         <div class="flex-box-ft">
-          <img class="aside--recommend__image" src="~@/assets/images/common/recommend/recommend_1.png" alt="院校合作" />
+          <img class="aside--recommend__image" src="~@/assets/images/icon/aside_icon_video.png" alt="院校合作" />
         </div>
         <div class="flex-box-bd">
           <div class="aside--recommend__title">院校合作</div>
@@ -17,7 +17,7 @@
       </div>
       <div class="aside--recommend__item flex-box">
         <div class="flex-box-ft">
-          <img class="aside--recommend__image" src="~@/assets/images/common/recommend/recommend_2.png" alt="企业服务" />
+          <img class="aside--recommend__image" src="~@/assets/images/icon/aside_icon_company.png" alt="企业服务" />
         </div>
         <div class="flex-box-bd">
           <div class="aside--recommend__title">企业服务</div>
@@ -26,7 +26,7 @@
       </div>
       <div class="aside--recommend__item flex-box">
         <div class="flex-box-ft">
-          <img class="aside--recommend__image" src="~@/assets/images/common/recommend/recommend_3.png" alt="职业转型"/>
+          <img class="aside--recommend__image" src="~@/assets/images/icon/aside_icon_study.png" alt="职业转型"/>
         </div>
         <div class="flex-box-bd">
           <div class="aside--recommend__title">职业转型</div>
@@ -95,20 +95,23 @@ export default {
         display: inline-block;
         width: 54px;
         height: 54px;
-        margin-right: 15px;
-        border-radius: 4px;
+        margin-right: 20px;
+        border-radius: 50%;
+        // border: 1px solid #e4e4e4;
+        box-shadow: 2px 2px 15px 0px rgba(46, 61, 73, 0.2);
       }
       .aside--recommend__title{
         font-size: 14px;
         color: #0089de;
         line-height: 18px;
         font-weight: 500;
+        margin-bottom: 6px;
       }
 
       .aside--recommend__desc{
         font-size: 12px;
         color: #666;
-        line-height: 17px;
+        line-height: 18px;
       }
     }
 
