@@ -8,7 +8,10 @@
       </div>
       <div class="page--header__bd"></div>
       <div class="page--header__ft">
-        <img class="page--header__avatar" :src="userInfo.github_avatar_url" alt="avatar" />
+        <a :href="oauthUrl" v-if="!isLogin">
+          <img class="page--header__avatar" :src="userInfo.github_avatar_url" alt="avatar" />
+        </a>
+        <img v-else class="page--header__avatar" :src="userInfo.github_avatar_url" alt="avatar" />
       </div>
     </div>
   </div>
@@ -22,15 +25,23 @@ export default {
   name: 'Header',
   data () {
     return {
+      isLogin: false,
+      oauthUrl: '',
       userInfo: {
-        github_avatar_url: avatar
+        github_avatar_url: avatar,
       }
     }
   },
   created() {
-    Service.user.getUserInfo().then( userInfo => {
-      this.userInfo = userInfo
-    })
+    let token = Service.user.token();
+    if(token){
+      Service.user.getUserInfo().then( userInfo => {
+        this.userInfo = userInfo;
+        this.isLogin = true;
+      })
+    }else{
+      this.oauthUrl = Service.user.oauthUrl();
+    }
   },
   components: {
 

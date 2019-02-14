@@ -5,6 +5,8 @@ const apiHost    = 'https://api.aitschool.com';
 const PREFIX  = apiHost + apiprefix;
 const githubClientId = '0afe04184c7f3628940d';
 const githubRedirctURI = 'https%3A%2F%2Fwww.aitschool.com';
+// const githubRedirctURI = 'http%3A%2F%2Flocalhost:8080';
+
 const githubLoginURL = 'https://github.com/login/oauth/authorize';
 
 

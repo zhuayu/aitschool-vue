@@ -19,7 +19,6 @@ import Course from './widget/Course.vue';
 import Aside from '@/components/Aside/Aside.vue';
 import More from '@/components/More/More.vue';
 
-
 export default {
   name: 'home',
   components: {

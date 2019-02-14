@@ -25,14 +25,11 @@ const handleErrorRequest = (response) => {
 // 添加一个请求拦截器（ 一般用于鉴权 )
 import DataStore from '@/global/storage/datastore.js';
 axios.interceptors.request.use(function (config) {
-  let token = DataStore.map.get('token');
-  if(!token){
-    token = DataStore.storage.get('token');
-    DataStore.map.set('token',token);
-  }
-  if(token){
+  let tokenValue = DataStore.map.get('token') || DataStore.storage.get('token');
+  if(tokenValue){
+    DataStore.map.set('token',tokenValue);
     config['headers'] = {
-      Authorization: `Bearer ${token}`
+      Authorization: `Bearer ${tokenValue.token}`
     }
   }
   return config;

@@ -42,12 +42,18 @@ export default {
   },
   created() {
     let id = this.$route.params.id;
-    Promise.all([Service.course.info(id),Service.course.buyStatus(id)])
-      .then(res => {
-        this.course = res[0];
-        this.canLearn = res[1].can_learn;
-        this.loading = false
+
+    Service.course.info(id).then( res => {
+      this.course = res;
+      this.loading = false
+    })
+
+    let isLogin = Service.user.token();
+    if(isLogin){
+      Service.course.buyStatus(id).then( res => {
+        this.canLearn = res.can_learn;
       })
+    }
   },
   components: {
     Aside,

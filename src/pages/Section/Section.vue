@@ -95,6 +95,7 @@ export default {
       .course--catalog__container{
         background: #fff;
         border: 1px solid #e4e4e4;
+        min-height: 584px;
       }
 
       .course--catalog__content{

@@ -4,7 +4,7 @@ class MyStorage {
     this.storage = window.localStorage;
   }
 
-  set(key, value, exp = 60 * 60 ){ // exp/秒，默认 60 * 60 秒 , 1 小时
+  set(key, value, exp = 60 * 60 * 24 ){ // exp/秒，默认 60 * 60 * 24 = 1 天
     let timestamp = Date.now();
     let data = JSON.stringify({ value, exp, timestamp });
     key = this.prefix + key;

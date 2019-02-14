@@ -1,5 +1,6 @@
 const Home = resolve => require(['@/pages/Home/Home'], resolve)
 const Blog = resolve => require(['@/pages/Blog/Blog'], resolve)
+const LoginCallbackGithub = resolve => require(['@/pages/Login/Github'], resolve)
 const Plan = resolve => require(['@/pages/Plan/Plan'], resolve)
 const Course = resolve => require(['@/pages/Course/Course'], resolve)
 const Section = resolve => require(['@/pages/Section/Section'], resolve)
@@ -10,6 +11,11 @@ export default [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/login/oauth/callback/github',
+    name: 'LoginCallbackGithub',
+    component: LoginCallbackGithub
   },
   {
     path: '/blog/:id',

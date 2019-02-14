@@ -40,9 +40,14 @@ export default {
     let name = 'github';
     return request.post(webConfig.urls.common.login,{ name, code }).then( token => {
       DataStore.map.set('token',token);
-      DataStore.storage.set('token',token);
+      DataStore.storage.set('token',token, 60 * 60 * 24 * 30);
       return token
     })
+  },
+
+  // 第三方登录地址
+  oauthUrl () {
+    return webConfig.githubLoginURL;
   }
 }
 
