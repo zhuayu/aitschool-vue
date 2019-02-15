@@ -31,5 +31,6 @@ html,body{
 .pg--bd{
   flex: 1;
   background: #f1f1f1;
+  /*background-image: linear-gradient(to bottom right, #f7f7f7, #eafbff);*/
 }
 </style>

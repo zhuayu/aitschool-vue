@@ -2,7 +2,7 @@
   <div class="sections--page">
     <div class="sections--page__container w1000">
       <div class="sections--page__main">
-        <div class="section--main__container">
+        <div class="section--main__container" ref="sectionMainer">
           <Loading :loading="loading">
             <Video v-if="video_url" :url="video_url"></Video>
             <Marked :content="section.content || '暂无内容'"></Marked>
@@ -65,7 +65,17 @@ export default {
         this.section = res[1];
         this.video_url = this.section.video_url;
         this.loading = false
+        this.gotoTop();
       })
+    },
+    gotoTop() {
+      // 切换小节滚动到顶部
+      // let sectionMainerDOM = this.$refs.sectionMainer;
+      // if(sectionMainerDOM){
+      //   console.log(sectionMainerDOM)
+      //   sectionMainerDOM.scrollTop = 0;
+      // }
+      document.documentElement.scrollTop = 0;
     }
   },
   components: {
