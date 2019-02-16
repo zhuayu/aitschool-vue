@@ -132,6 +132,7 @@ export default {
     }
 
     .section--main__container{
+      width: 710px;
       min-height: 240px;
       background: #fff;
       padding: 20px;

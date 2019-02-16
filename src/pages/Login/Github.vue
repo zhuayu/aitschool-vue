@@ -27,6 +27,10 @@ export default {
     Service.user.login(code).then(()=>{
       // this.$router.push({ name: 'Home' });
       window.location.href = '/';
+    }).catch(()=>{
+      confirm('网络问题，请回到首页再尝试登录，或联系我们: 13502222677 ～',()=>{
+        window.location.href = '/';
+      })
     })
   },
   data () {

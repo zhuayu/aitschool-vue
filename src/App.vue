@@ -27,6 +27,7 @@ html,body{
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  justify-content: space-between;
 }
 .pg--bd{
   flex: 1;
