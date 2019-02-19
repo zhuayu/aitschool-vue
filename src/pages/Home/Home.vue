@@ -5,6 +5,7 @@
         <Banner/>
         <Course/>
         <Plan/>
+        <Recommend/>
         <More/>
       </div>
       <Aside class="home--page__side"/>
@@ -16,6 +17,7 @@
 import Banner from './widget/Banner.vue';
 import Plan from './widget/Plan.vue';
 import Course from './widget/Course.vue';
+import Recommend from './widget/Recommend.vue';
 import Aside from '@/components/Aside/Aside.vue';
 import More from '@/components/More/More.vue';
 
@@ -26,7 +28,8 @@ export default {
     Plan,
     Course,
     More,
-    Aside
+    Aside,
+    Recommend
   }
 }
 </script>
