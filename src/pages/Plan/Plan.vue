@@ -14,7 +14,7 @@
           </div>
           <div class="plan--course__container" v-show="plan.id">
             <router-link :to="{ name:'Course',params: { id: data.id}}" class="plan--course__item" v-for="(data,index) in plan.courses" :key="index">
-              <Course :course="data"/>
+              <Course :course="data" :sub-text="plan.name"/>
             </router-link>
           </div>
         </Loading>
@@ -29,7 +29,7 @@
 
 import Aside from '@/components/Aside/Aside.vue';
 import Service from '@/global/service/index.js';
-import Course from '@/components/CourseCard/CourseCard_1.vue';
+import Course from '@/components/CourseCard/CourseCard_2.vue';
 import More from '@/components/More/More.vue';
 import Loading from '@/components/Loading/Circle.vue';
 
@@ -111,10 +111,10 @@ export default {
     display: flex;
     flex-wrap: wrap;
     .plan--course__item{
-      width: 365px;
-      flex-grow: 1;
+      width: 240px;
+      height: 294px;
       margin-bottom: 10px;
-      &:not(:nth-child(2n)){
+      &:not(:nth-child(3n)){
         margin-right: 10px;
       }
       &:last-child{

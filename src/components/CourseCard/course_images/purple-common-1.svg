@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="122" height="122">
+  <defs>
+    <circle id="a" cx="60" cy="60" r="60"/>
+    <linearGradient id="c" x1="60.729%" x2="-5.648%" y1="0%" y2="4.116%">
+      <stop offset="0%" stop-color="#3023AE" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#C86DD7"/>
+    </linearGradient>
+    <linearGradient id="d" x1="7.206%" x2="84.094%" y1="9.244%" y2="112.337%">
+      <stop offset="0%" stop-color="#5B79A2"/>
+      <stop offset="100%" stop-color="#2E4469"/>
+    </linearGradient>
+    <linearGradient id="e" x1="14.496%" x2="0%" y1="11.24%" y2="135.349%">
+      <stop offset="0%" stop-color="#B595FD"/>
+      <stop offset="100%" stop-color="#B372BD" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="f" x1="50%" x2="50%" y1="100%" y2="0%">
+      <stop offset="0%" stop-color="#A987F7"/>
+      <stop offset="100%" stop-color="#B372BD"/>
+    </linearGradient>
+    <linearGradient id="g" x1="14.496%" x2="84.643%" y1="11.24%" y2="89.769%">
+      <stop offset="0%" stop-color="#B595FD"/>
+      <stop offset="100%" stop-color="#B372BD" stop-opacity="0"/>
+    </linearGradient>
+    <circle id="h" cx="60" cy="60" r="60"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+    <mask id="b" fill="#fff">
+      <use xlink:href="#a"/>
+    </mask>
+    <use fill="#25395B" xlink:href="#a"/>
+    <rect width="78.156" height="78.156" x="20.393" y="21.393" fill="#2E4469" mask="url(#b)" rx="4" transform="rotate(45 59.47 60.47)"/>
+    <rect width="78.156" height="78.156" x="20.393" y="21.393" stroke="url(#c)" stroke-width=".665" mask="url(#b)" rx="4" transform="rotate(45 59.47 60.47)"/>
+    <rect width="69.962" height="69.962" x="24.49" y="25.49" fill="url(#d)" mask="url(#b)" rx="4" transform="rotate(45 59.47 60.47)"/>
+    <g mask="url(#b)">
+      <path stroke="url(#e)" stroke-width="2" d="M0 .213l36.743 23.782L68 43M37 68V24.497" transform="translate(20 11)"/>
+      <g transform="translate(42 20)">
+        <circle cx="15.259" cy="14.499" r="10.259" fill="url(#f)" opacity=".106" transform="rotate(43 15.259 14.499)"/>
+        <circle cx="45.259" cy="34.499" r="10.259" fill="url(#f)" opacity=".106" transform="rotate(43 45.259 34.499)"/>
+        <circle cx="15.259" cy="59.259" r="10.259" fill="url(#f)" opacity=".106" transform="rotate(43 15.259 59.259)"/>
+        <circle cx="14.697" cy="14.879" r="7.697" fill="url(#f)" opacity=".281" transform="rotate(43 14.697 14.879)"/>
+        <circle cx="45.697" cy="33.879" r="7.697" fill="url(#f)" opacity=".281" transform="rotate(43 45.697 33.879)"/>
+        <circle cx="15.697" cy="58.697" r="7.697" fill="url(#f)" opacity=".281" transform="rotate(43 15.697 58.697)"/>
+        <circle cx="14.358" cy="14.94" r="5.5" fill="url(#f)" transform="rotate(43 14.358 14.94)"/>
+        <path fill="#FFF" fill-opacity=".2" d="M10.735 11.617a5 5 0 1 1 6.364 7.584 5 5 0 0 0-6.364-7.584z"/>
+      </g>
+      <g transform="translate(79 46)">
+        <circle cx="8.358" cy="7.94" r="5.5" fill="url(#f)" transform="rotate(43 8.358 7.94)"/>
+        <path fill="#FFF" fill-opacity=".2" d="M4.735 4.617a5 5 0 1 1 6.364 7.584 5 5 0 0 0-6.364-7.584z"/>
+      </g>
+      <g transform="translate(49 71)">
+        <circle cx="8.358" cy="7.94" r="5.5" fill="url(#f)" transform="rotate(43 8.358 7.94)"/>
+        <path fill="#FFF" fill-opacity=".2" d="M4.735 4.617a5 5 0 1 1 6.364 7.584 5 5 0 0 0-6.364-7.584z"/>
+      </g>
+    </g>
+    <use stroke="url(#g)" stroke-width="2" xlink:href="#h"/>
+  </g>
+</svg>

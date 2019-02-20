@@ -39,7 +39,7 @@ export default {
             name: 'Vue.js 框架的作者尤小右聊聊前端框架开发背后的故事',
             link: 'https://castro.fm/episode/QyGc25'
           },{
-            name: '《深入浅出Node.js》作者朴灵一起聊聊Node.js',
+            name: '和《深入浅出Node.js》作者朴灵一起聊聊Node.js',
             link: 'https://castro.fm/episode/MVXdA3'
           },{
             name: 'Git, GitHub and GitLab',

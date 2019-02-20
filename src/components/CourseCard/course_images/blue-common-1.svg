@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="122" height="122">
+  <defs>
+    <circle id="a" cx="60" cy="60" r="60"/>
+    <linearGradient id="c" x1="-28.05%" x2="73.325%" y1="-361.425%" y2="100%">
+      <stop offset="0%" stop-color="#5B79A2"/>
+      <stop offset="100%" stop-color="#2E4469"/>
+    </linearGradient>
+    <linearGradient id="d" x1="38.471%" x2="16.259%" y1="81.515%" y2="6.036%">
+      <stop offset="0%" stop-color="#76E1FF"/>
+      <stop offset="100%" stop-color="#637BFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="e" x1="16.259%" x2="38.471%" y1="6.036%" y2="81.515%">
+      <stop offset="0%" stop-color="#76E1FF"/>
+      <stop offset="100%" stop-color="#637BFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="f" x1="67.252%" x2="15.826%" y1="22.034%" y2="163.626%">
+      <stop offset="0%" stop-color="#76E1FF"/>
+      <stop offset="100%" stop-color="#637BFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="g" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    </filter>
+    <linearGradient id="h" x1="50%" x2="50%" y1="0%" y2="97.483%">
+      <stop offset="0%" stop-color="#21C8F6"/>
+      <stop offset="100%" stop-color="#637BFF"/>
+    </linearGradient>
+    <linearGradient id="i" x1="24.379%" x2="84.171%" y1="5.536%" y2="97.907%">
+      <stop offset="0%" stop-color="#76E1FF"/>
+      <stop offset="100%" stop-color="#637BFF" stop-opacity="0"/>
+    </linearGradient>
+    <circle id="j" cx="60" cy="60" r="60"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+    <mask id="b" fill="#fff">
+      <use xlink:href="#a"/>
+    </mask>
+    <use fill="#000" fill-opacity=".152" xlink:href="#a"/>
+    <g mask="url(#b)">
+      <g transform="translate(0 16)">
+        <rect width="140" height="131" fill="#2E4469" rx="4"/>
+        <path fill="url(#c)" fill-rule="nonzero" d="M36 2.098a.558.558 0 0 0-.19-.415L34.867.78a.612.612 0 0 0-.87 0L25.19 9.186A.558.558 0 0 0 25 9.6c0 .156.063.294.19.414l8.806 8.405a.61.61 0 0 0 .87 0l.945-.901a.558.558 0 0 0 .189-.415.558.558 0 0 0-.19-.415L28.383 9.6l7.428-7.088A.558.558 0 0 0 36 2.098z" transform="rotate(-180 51.5 16.6)"/>
+        <path fill="url(#c)" fill-rule="nonzero" d="M11 2.098a.558.558 0 0 0-.19-.415L9.867.78a.612.612 0 0 0-.87 0L.19 9.186A.558.558 0 0 0 0 9.6c0 .156.063.294.19.414l8.806 8.405a.61.61 0 0 0 .87 0l.945-.901a.558.558 0 0 0 .189-.415.558.558 0 0 0-.19-.415L3.384 9.601l7.428-7.088A.558.558 0 0 0 11 2.098z" transform="translate(42 14)"/>
+        <path fill="url(#c)" fill-rule="nonzero" d="M18.889.642l-.87-.223a.416.416 0 0 0-.33.033.433.433 0 0 0-.217.256L12.24 17.632a.37.37 0 0 0 .035.321c.06.1.152.169.273.203l.87.223a.415.415 0 0 0 .33-.032.433.433 0 0 0 .217-.256l5.232-16.924a.37.37 0 0 0-.035-.322.451.451 0 0 0-.273-.203z" transform="rotate(8 -63.386 316.714)"/>
+        <path stroke="url(#d)" stroke-width=".5" d="M36 2.098a.558.558 0 0 0-.19-.415L34.867.78a.612.612 0 0 0-.87 0L25.19 9.186A.558.558 0 0 0 25 9.6c0 .156.063.294.19.414l8.806 8.405a.61.61 0 0 0 .87 0l.945-.901a.558.558 0 0 0 .189-.415.558.558 0 0 0-.19-.415L28.383 9.6l7.428-7.088A.558.558 0 0 0 36 2.098z" transform="rotate(-180 51.5 16.6)"/>
+        <path stroke="url(#e)" stroke-width=".5" d="M11 2.098a.558.558 0 0 0-.19-.415L9.867.78a.612.612 0 0 0-.87 0L.19 9.186A.558.558 0 0 0 0 9.6c0 .156.063.294.19.414l8.806 8.405a.61.61 0 0 0 .87 0l.945-.901a.558.558 0 0 0 .189-.415.558.558 0 0 0-.19-.415L3.384 9.601l7.428-7.088A.558.558 0 0 0 11 2.098z" transform="translate(42 14)"/>
+        <path stroke="url(#e)" stroke-width=".5" d="M18.889.642l-.87-.223a.416.416 0 0 0-.33.033.433.433 0 0 0-.217.256L12.24 17.632a.37.37 0 0 0 .035.321c.06.1.152.169.273.203l.87.223a.415.415 0 0 0 .33-.032.433.433 0 0 0 .217-.256l5.232-16.924a.37.37 0 0 0-.035-.322.451.451 0 0 0-.273-.203z" transform="rotate(8 -63.386 316.714)"/>
+        <path fill="url(#c)" d="M4 0h136v9H0V4a4 4 0 0 1 4-4z"/>
+        <rect width="99" height="4" x="17" y="38" fill="url(#c)" rx="2"/>
+        <rect width="99" height="4" x="17" y="38" stroke="url(#e)" stroke-width=".5" rx="2"/>
+        <rect width="99" height="4" x="17" y="48" fill="url(#c)" rx="2"/>
+        <rect width="99" height="4" x="17" y="48" stroke="url(#e)" stroke-width=".5" rx="2"/>
+        <rect width="89" height="4" x="27" y="56" fill="url(#c)" rx="2"/>
+        <rect width="89" height="4" x="27" y="56" stroke="url(#e)" stroke-width=".5" rx="2"/>
+        <rect width="89" height="4" x="27" y="72" fill="url(#c)" rx="2"/>
+        <rect width="89" height="4" x="27" y="72" stroke="url(#e)" stroke-width=".5" rx="2"/>
+        <rect width="89" height="4" x="27" y="64" fill="url(#c)" rx="2"/>
+        <rect width="89" height="4" x="27" y="64" stroke="url(#e)" stroke-width=".5" rx="2"/>
+        <rect width="89" height="4" x="27" y="80" fill="url(#c)" rx="2"/>
+        <rect width="89" height="4" x="27" y="80" stroke="url(#e)" stroke-width=".5" rx="2"/>
+      </g>
+    </g>
+    <g mask="url(#b)">
+      <g transform="scale(1 -1) rotate(-16 -186.654 -200.374)">
+        <path stroke="url(#f)" stroke-width="2" d="M24.45 71.309l21.678-31.774L34.335 3.486l-28.36 15.35"/>
+        <circle cx="6" cy="18" r="6" fill="#328AF1" filter="url(#g)"/>
+        <circle cx="46" cy="39" r="4" fill="url(#h)"/>
+        <path fill="#FFF" fill-opacity=".2" d="M43.524 41.857a3.81 3.81 0 1 1 5.334-5.334 3.81 3.81 0 0 0-5.334 5.334z"/>
+        <circle cx="34.5" cy="3.5" r="3.5" fill="url(#h)"/>
+        <path fill="#FFF" fill-opacity=".2" d="M32.333 6A3.333 3.333 0 1 1 37 1.333 3.333 3.333 0 0 0 32.333 6z"/>
+        <g transform="translate(3 14)">
+          <ellipse cx="3.5" cy="4" fill="url(#h)" rx="3.5" ry="3.333"/>
+          <path fill="#FFF" fill-opacity=".2" d="M1.333 6.381C.523 5.801 0 4.88 0 3.841 0 2.088 1.492.667 3.333.667c1.09 0 2.059.498 2.667 1.27a3.429 3.429 0 0 0-2-.635c-1.841 0-3.333 1.42-3.333 3.174 0 .715.248 1.374.666 1.905z"/>
+        </g>
+      </g>
+    </g>
+    <use stroke="url(#i)" xlink:href="#j"/>
+  </g>
+</svg>
