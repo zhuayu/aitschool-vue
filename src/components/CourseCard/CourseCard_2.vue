@@ -13,9 +13,11 @@
       <div class="course--item__info">
         <div class="course--item__lesson">
           <div class="course--item__number">{{course.short_name}}</div>
-          <div class="course--item__duration">{{course.duration || '-'}} 分钟</div>
+          <div class="course--item__duration">
+            <span>{{course.duration || '-'}} 分钟</span>
+            <span class="course--item__price">{{course.price ? '¥ ' + course.price : '限时免费'}}</span>
+          </div>
         </div>
-        <div class="course--item__price">{{course.price ? '¥ ' + course.price : '限时免费'}}</div>
       </div>
       <div class="course--item__btnBox">{{course.price ? '¥ ' + course.price : '限时免费'}}</div>
     </div>
@@ -52,7 +54,7 @@ export default {
     display: inline-block;
     width: 240px;
     background-color: #fff;
-    border-radius: 8px;
+    // border-radius: 8px;
     overflow: hidden;
 
     &.red{
@@ -81,7 +83,7 @@ export default {
       }
     }
     &:before{
-      border-radius: 8px;
+      // border-radius: 8px;
       transition: height .2s;
       position: absolute;
       top: 0;
@@ -153,13 +155,7 @@ export default {
       box-sizing: border-box;
       transition: all .2s ease;
       .course--item__info{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        .course--item__lesson{
-          flex: 1;
-          width: 110px;
-        }
+
         .course--item__number{
           font-size: 14px;
           color: #666;
@@ -177,8 +173,8 @@ export default {
           transition: all .2s ease;
         }
         .course--item__price{
-          font-size: 14px;
-          color: #ff5c00;;
+          float: right;
+          color: #ff5c00;
         }
       }
       .course--item__btnBox{
