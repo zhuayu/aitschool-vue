@@ -103,7 +103,6 @@ export default {
         font-size: 14px;
         line-height: 24px;
         color: #ff5c00;
-        cursor: pointer;
       }
     }
 

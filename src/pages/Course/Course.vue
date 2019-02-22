@@ -53,9 +53,7 @@ export default {
     if(isLogin){
       Service.course.buyStatus(id).then( res => {
         this.canLearn = res.can_learn;
-        if(!this.canLearn){
-          this.btnText = '提示：请联系 13502222677 客服开通权限'
-        }
+        this.btnText = this.canLearn ? '提示：权限已开通' : '提示：请联系 13502222677 客服开通权限';
       })
     }else{
       this.btnText = '提示：请登录后查看'
