@@ -4,7 +4,7 @@
       <div class="course--page__main">
         <Loading :loading="loading">
           <div class="course--info__container">
-            <Course :course="course" btnText="" :shadow="false"/>
+            <Course :course="course" :btnText="btnText" :shadow="false"/>
           </div>
           <div class="course--catalog__container">
             <div class="course--catalog__content">
@@ -38,6 +38,7 @@ export default {
       course: {},
       canLearn: false,
       loading: true,
+      btnText: ''
     }
   },
   created() {
@@ -52,8 +53,16 @@ export default {
     if(isLogin){
       Service.course.buyStatus(id).then( res => {
         this.canLearn = res.can_learn;
+        if(!this.canLearn){
+          this.btnText = '提示：请联系 13502222677 客服开通权限'
+        }
       })
+    }else{
+      this.btnText = '提示：请登录后查看'
     }
+  },
+  methods: {
+
   },
   components: {
     Aside,

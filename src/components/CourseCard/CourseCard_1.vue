@@ -10,7 +10,7 @@
         <div>优惠价格：<span class="course--item__price">{{course.price ? '¥ ' + course.price : '限时免费'}}</span></div>
         <div>学习时长：{{course.duration}} /分钟</div>
       </div>
-      <span v-if="btnText" class="course--item__btn">{{btnText}}</span>
+      <span v-if="btnText" class="course--item__btn" @click="Click">{{btnText}}</span>
     </div>
   </div>
 </template>
@@ -40,8 +40,10 @@ export default {
       default: true
     }
   },
-  components: {
-
+  methods: {
+    Click () {
+      this.$emit('click-btn');
+    }
   }
 }
 </script>
@@ -97,17 +99,11 @@ export default {
         color: #ff5c00;
       }
       .course--item__btn{
-        display: inline-block;
-        width: 144px;
-        height: 48px;
-        line-height: 48px;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        color: #fff;
-        background: #02b3e4;
-        text-align: center;
-        border-radius: 2px;
+        padding-top: 24px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #ff5c00;
+        cursor: pointer;
       }
     }
 
