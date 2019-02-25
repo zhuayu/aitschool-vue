@@ -4,8 +4,9 @@ axios.defaults.xsrfHeaderName = 'X-CSRF-TOKEN'
 axios.defaults.timeout = 8000
 
 // 全局错误处理
-const handleErrorRequest = (response) => {
-  let status = response.status;
+const handleErrorRequest = (error) => {
+  let response = error.response;
+  let status =  response ? response.status : 408;
   // let data = response.data;
   // let errors = data.errors;
   // let message = data.message;
@@ -15,10 +16,12 @@ const handleErrorRequest = (response) => {
     // console.log('页面过期')
   } else if (status === 422 || status === 423) {
     // console.log('参数校验失败',errors)
-  } else {
+  } else if( status === 408){
+    alert('请求超时，请检查网络后刷新页面 ～')
+  }else{
     // 一般情况下需要上报
     // eslint-disable-next-line
-    console.log('其他错误',message)
+    console.log('其他错误')
   }
 }
 
@@ -53,7 +56,7 @@ axios.interceptors.response.use( res => {
       return res.data;
   }
 }, error => {
-  (error.response) && handleErrorRequest(error.response);
+  handleErrorRequest(error);
   return Promise.reject(error)
 })
 

@@ -6,7 +6,9 @@
           <img class="page--header__logo" src="~@/assets/images/common/aitschool_logo.png" alt="aitschool" />
         </router-link>
       </div>
-      <div class="page--header__bd"></div>
+      <div class="page--header__bd">
+        <router-link class="page--header--link" :to="{ name:'Home'}">首页</router-link>
+      </div>
       <div class="page--header__ft">
         <a :href="oauthUrl" v-if="!isLogin">
           <img class="page--header__avatar" :src="userInfo.github_avatar_url" alt="avatar" />
@@ -87,6 +89,16 @@ export default {
 
     .page--header__bd{
       flex: 1;
+      padding-left: 20px;
+      line-height: 50px;
+      font-size: 16px;
+      color: #999;
+      .page--header--link{
+        margin: 20px;
+        &:hover{
+          color: #2687d7;
+        }
+      }
     }
 
     .page--header__ft{
