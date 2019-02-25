@@ -21,13 +21,13 @@ export default {
         id: 2,
         name: 'HTML',
         short_name: '超文本标记语言',
-        price: 99,
+        price: 0,
         duration: 60,
       },{
         id: 3,
         name: 'CSS',
         short_name: '层叠样式表',
-        price: 99,
+        price: 0,
         duration: 120,
       }]
     }
