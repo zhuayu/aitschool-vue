@@ -18,8 +18,8 @@ import Banner from './widget/Banner.vue';
 import Plan from './widget/Plan.vue';
 import Course from './widget/Course.vue';
 import Recommend from './widget/Recommend.vue';
-import Aside from '@/components/Aside/Aside.vue';
-import More from '@/components/More/More.vue';
+import Aside from '@/components/TheSidebar.vue';
+import More from '@/components/BaseMoreInfo.vue';
 
 export default {
   name: 'home',

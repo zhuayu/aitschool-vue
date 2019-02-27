@@ -12,8 +12,8 @@
 
 <script>
 import Service from '@/global/service/index.js';
-import Loading from '@/components/Loading/Circle.vue';
-import More from '@/components/More/More.vue';
+import Loading from '@/components/BaseLoadingCircle.vue';
+import More from '@/components/BaseMoreInfo.vue';
 
 export default {
   name: 'LoginCallbackGithub',

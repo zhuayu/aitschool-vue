@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Recommend from '@/components/Recommend/Recommend.vue';
+import Recommend from '@/components/BaseRecommend.vue';
 
 export default {
   data() {

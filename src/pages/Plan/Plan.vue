@@ -27,11 +27,11 @@
 
 <script>
 
-import Aside from '@/components/Aside/Aside.vue';
+import Aside from '@/components/TheSidebar.vue';
 import Service from '@/global/service/index.js';
 import Course from '@/components/CourseCard/CourseCard_2.vue';
-import More from '@/components/More/More.vue';
-import Loading from '@/components/Loading/Circle.vue';
+import More from '@/components/BaseMoreInfo.vue';
+import Loading from '@/components/BaseLoadingCircle.vue';
 
 export default {
   name: 'Plan',

@@ -28,7 +28,7 @@ import 'video.js/dist/video-js.css'
 import { videoPlayer } from 'vue-video-player'
 
 export default {
-  name: 'Video',
+  name: 'BaseVideo',
   props: {
     url: null,
   },

@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import Recommend from '@/components/Recommend/Recommend.vue';
-import More from '@/components/More/More.vue';
-import Aside from '@/components/Aside/Aside.vue';
+import Recommend from '@/components/BaseRecommend.vue';
+import More from '@/components/BaseMoreInfo.vue';
+import Aside from '@/components/TheSidebar.vue';
 
 export default {
   name: 'RecomendPage',
@@ -21,7 +21,7 @@ export default {
     return {
       recommends: [
         {
-          tab: 'FM',
+          tab: '电台',
           list: [{
             name: '与 Hawstein 和左程云聊算法和数据结构',
             link: 'https://castro.fm/episode/feNHQL'
@@ -60,7 +60,7 @@ export default {
             link: 'https://castro.fm/episode/loxa7k'
           }]
         },{
-          tab: 'Awesome',
+          tab: '资源',
           list: [{
             name: '中国科学技术大学课程资源',
             link: 'https://github.com/mbinary/USTC-CS-Courses-Resource'
@@ -99,7 +99,7 @@ export default {
             link: 'https://github.com/xingshaocheng/architect-awesome'
           }]
         },{
-          tab: 'Stack',
+          tab: '技能栈',
           list: [{
             name: 'Git - 分布式版本控制系统',
             link: 'https://git-scm.com/doc'

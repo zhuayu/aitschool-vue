@@ -25,7 +25,7 @@ import avatar from '@/assets/images/common/default_avatar.jpg';
 import Service from '@/global/service/index.js';
 
 export default {
-  name: 'Header',
+  name: 'TheHeader',
   data () {
     return {
       isLogin: false,

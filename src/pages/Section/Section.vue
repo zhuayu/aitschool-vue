@@ -23,10 +23,10 @@
 </template>
 
 <script>
-import Loading from '@/components/Loading/Circle.vue';
-import Catalog from '@/components/Catalog/Catalog.vue';
-import Marked from '@/components/Mark'
-import Video from '@/components/Video'
+import Loading from '@/components/BaseLoadingCircle.vue';
+import Catalog from '@/components/BaseCatalog.vue';
+import Marked from '@/components/BaseMarkdown'
+import Video from '@/components/BaseVideo.vue'
 import Service from '@/global/service/index.js';
 
 export default {

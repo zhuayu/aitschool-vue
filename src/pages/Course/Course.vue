@@ -23,13 +23,13 @@
 
 <script>
 
-import Aside from '@/components/Aside/Aside.vue';
+import Aside from '@/components/TheSidebar.vue';
 import Service from '@/global/service/index.js';
 import Course from '@/components/CourseCard/CourseCard_1.vue';
-import Loading from '@/components/Loading/Circle.vue';
-import Catalog from '@/components/Catalog/Catalog.vue';
+import Loading from '@/components/BaseLoadingCircle.vue';
+import Catalog from '@/components/BaseCatalog.vue';
 
-import More from '@/components/More/More.vue';
+import More from '@/components/BaseMoreInfo.vue';
 
 export default {
   name: 'Plan',
@@ -95,11 +95,10 @@ export default {
 
       .course--catalog__content{
         padding-top: 10px;
-
+        line-height: 2;
         .course--catalog__title{
           font-size: 16px;
           color: #333;
-          line-height: 2;
           padding-left: 20px;
           margin: 0;
           margin-left: -1px;
@@ -108,7 +107,6 @@ export default {
 
         .course--catalog__description{
           font-size: 12px;
-          line-height: 20px;
           color: #666;
           margin: 0 20px;
           padding-bottom: 10px;

@@ -22,6 +22,7 @@
 <script>
 
 export default {
+  name: 'BaseRecommend',
   data() {
     return {
       page: 0,

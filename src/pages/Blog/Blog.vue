@@ -15,11 +15,11 @@
 
 <script>
 
-import Aside from '@/components/Aside/Aside.vue';
+import Aside from '@/components/TheSidebar.vue';
 import Service from '@/global/service/index.js';
-import Marked from '@/components/Mark'
-import More from '@/components/More/More.vue';
-import Loading from '@/components/Loading/Circle.vue';
+import Marked from '@/components/BaseMarkdown'
+import More from '@/components/BaseMoreInfo.vue';
+import Loading from '@/components/BaseLoadingCircle.vue';
 
 export default {
   name: 'blog',
