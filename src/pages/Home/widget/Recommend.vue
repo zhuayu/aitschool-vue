@@ -35,6 +35,9 @@ export default {
         },{
           tab: 'Awesome',
           list: [{
+            name: '中国科学技术大学课程资源',
+            link: 'https://github.com/mbinary/USTC-CS-Courses-Resource'
+          },{
             name: '九部成员合著的web前端开发零基础入门手册',
             link: 'https://www.yuque.com/fe9/basic'
           },{
@@ -43,9 +46,6 @@ export default {
           },{
             name: 'LeetCode、HackRank、剑指 offer 等经典算法实现',
             link: 'https://github.com/apachecn/awesome-algorithm'
-          },{
-            name: 'C/C++ 面试基础知识总结，送给准备换工作的开发者',
-            link: 'https://github.com/huihut/interview'
           },{
             name: 'Python 优秀资源的整理',
             link: 'https://github.com/vinta/awesome-python'

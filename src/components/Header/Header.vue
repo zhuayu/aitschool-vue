@@ -8,6 +8,7 @@
       </div>
       <div class="page--header__bd">
         <router-link class="page--header--link" :to="{ name:'Home'}">首页</router-link>
+        <router-link class="page--header--link" :to="{ name:'Recommend'}">推荐</router-link>
       </div>
       <div class="page--header__ft">
         <a :href="oauthUrl" v-if="!isLogin">
