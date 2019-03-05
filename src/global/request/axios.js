@@ -1,7 +1,7 @@
 import axios from 'axios'
 axios.defaults.withCredentials = true
 axios.defaults.xsrfHeaderName = 'X-CSRF-TOKEN'
-axios.defaults.timeout = 8000
+// axios.defaults.timeout = 8000
 
 // 全局错误处理
 const handleErrorRequest = (error) => {
