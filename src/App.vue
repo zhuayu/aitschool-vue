@@ -34,4 +34,8 @@ html,body{
   background: #f1f1f1;
   /*background-image: linear-gradient(to bottom right, #f7f7f7, #eafbff);*/
 }
+
+.router-link-exact-active{
+  color: #2687d7;
+}
 </style>

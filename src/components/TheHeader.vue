@@ -9,6 +9,9 @@
       <div class="page--header__bd">
         <router-link class="page--header--link" :to="{ name:'Home'}">首页</router-link>
         <router-link class="page--header--link" :to="{ name:'Recommend'}">推荐</router-link>
+        <router-link class="page--header--link" :to="{ name:'ServeSchool'}">公开课</router-link>
+        <router-link class="page--header--link" :to="{ name:'ServeCompany'}">企业合作</router-link>
+        <router-link class="page--header--link" :to="{ name:'ServeZhiye'}">就业培训</router-link>
       </div>
       <div class="page--header__ft">
         <a :href="oauthUrl" v-if="!isLogin">
@@ -93,9 +96,11 @@ export default {
       padding-left: 20px;
       line-height: 50px;
       font-size: 16px;
+      font-weight: 500;
       color: #999;
       .page--header--link{
         margin: 20px;
+        transition: all .2s;
         &:hover{
           color: #2687d7;
         }
