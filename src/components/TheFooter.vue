@@ -1,7 +1,7 @@
 <template>
   <div class="page--footer">
     <div class="page--footer__container">Copyright © 2018 扎克斯体验技术部出品 
-      粤ICP备18089899号-3 
+      <a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备18089899号-3 </a>
       <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011802000279" target="_blank">
         <img style="width: 16px;height: 16px;vertical-align: middle;margin-left: 4px;" class="beian-img" src="http://www.beian.gov.cn/img/ghs.png">
       </a>
