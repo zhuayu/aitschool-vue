@@ -1,4 +1,4 @@
-const Home = resolve => require(['@/pages/Home/Home'], resolve)
+// const Home = resolve => require(['@/pages/Home/Home'], resolve)
 const Blog = resolve => require(['@/pages/Blog/Blog'], resolve)
 const Recommend = resolve => require(['@/pages/Recommend/Recommend'], resolve)
 const LoginCallbackGithub = resolve => require(['@/pages/Login/Github'], resolve)
@@ -14,7 +14,7 @@ export default [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Recommend
   },
   {
     path: '/login/oauth/callback/github',

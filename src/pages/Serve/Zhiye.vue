@@ -4,17 +4,17 @@
       <Banner :title="banner.title" :description="banner.description" :background-image="banner.backgroundImage"/>
 
       <div class="zhiye-section">
-        <h2 class="zhiye-title">2019年，前端工程师仍是互联网最炙手可热的岗位之一</h2>
+        <h2 class="zhiye-title">2021年，前端工程师仍是互联网最炙手可热的岗位之一</h2>
         <p class="zhiye-description">Web前端工程师的平均起薪已飙升到15000元，所有互联网公司都在寻找前端工程师。
           这是需求增长最快的开发岗位，在所有开发职位中排第1</p>
-        <div class="zhiye-content">
+        <div class="zhiye-content" v-if="false">
           <img src="http://j.jikexueyuan.com/Current/home/web_v201904/img/offer-img.png">
         </div>
       </div>
 
       <div class="worry-section">
         <div class="worry-content w1000">
-          <div class="worry-content-left">
+          <div class="worry-content-left" v-if="false">
             <img class="worry-content-img" src="http://j.jikexueyuan.com/Current/home/web_v201904/img/people2.svg">
           </div>
           <div class="worry-content-right">

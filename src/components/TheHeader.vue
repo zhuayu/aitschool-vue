@@ -3,17 +3,18 @@
     <div class="page--header__cell w1000">
       <div class="page--header__hd">
         <router-link :to="{ name:'Home'}">
-          <img class="page--header__logo" src="~@/assets/images/common/aitschool_logo.png" alt="aitschool" />
+          <div class="page--header__logo" style="font-size: 22px;line-height: 20px;color: #7d97ad;font-weight: 500">42College</div>
+          <!-- <img class="page--header__logo" src="~@/assets/images/common/aitschool_logo.png" alt="aitschool" /> -->
         </router-link>
       </div>
       <div class="page--header__bd">
         <router-link class="page--header--link" :to="{ name:'Home'}">首页</router-link>
-        <router-link class="page--header--link" :to="{ name:'Recommend'}">推荐</router-link>
+        <!-- <router-link class="page--header--link" :to="{ name:'Recommend'}">推荐</router-link> -->
         <router-link class="page--header--link" :to="{ name:'ServeSchool'}">公开课</router-link>
         <router-link class="page--header--link" :to="{ name:'ServeCompany'}">企业合作</router-link>
         <router-link class="page--header--link" :to="{ name:'ServeZhiye'}">就业培训</router-link>
       </div>
-      <div class="page--header__ft">
+      <div class="page--header__ft" v-if="false">
         <a :href="oauthUrl" v-if="!isLogin">
           <img class="page--header__avatar" :src="userInfo.github_avatar_url" alt="avatar" />
         </a>

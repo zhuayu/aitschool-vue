@@ -1,9 +1,9 @@
 <template>
   <div class="aside--container">
     <div class="aside--tdk__container">
-      <div class="aside--tdk__title">未来学堂 · 互联网新大学</div>
+      <div class="aside--tdk__title">42College · 编程研习室</div>
       <div class="aside--tdk__desc">一个帮助你职业成长的社区</div>
-      <div class="aside--tdk__keywords">产品 &  设计 & 研发 - aitschool</div>
+      <div class="aside--tdk__keywords">产品 &  设计 & 研发 - Growing</div>
     </div>
     <div class="aside--recommend__container">
       <router-link :to="{ name:'ServeSchool'}" class="aside--recommend__item flex-box">
@@ -35,13 +35,13 @@
       </router-link>
     </div>
     <div class="side--gg__container">
-      <a href="http://www.topproio.com/" target="_blank">
+      <a href="http://www.zakesi.com/" target="_blank">
         <img class="side--gg__img" src="~@/assets/images/common/toppro_gg.jpeg" />
         <span class="side--gg__tag">工作推荐</span>
       </a>
     </div>
     <div class="side--about__container">
-      <router-link :to="{ name:'Blog',params: { id: 1}}">关于我们 >></router-link>
+      <a href="http://www.zakesi.com/" target="_blank">关于我们 >></a>
     </div>
   </div>
 </template>
